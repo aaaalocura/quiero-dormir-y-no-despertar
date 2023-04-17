@@ -4,6 +4,8 @@ import { GetComentariosComponent } from './get-comentarios/get-comentarios.compo
 import { PushEventosComponent } from './push-eventos/push-eventos.component';
 import { PushNoticiasComponent } from './push-noticias/push-noticias.component';
 import { HomeComponent } from './home/home.component';
+import { ListarEventosComponent } from './listar-eventos/listar-eventos.component';
+import { ListarNoticiasComponent } from './listar-noticias/listar-noticias.component';
 
 const routes: Routes = [
 
@@ -14,6 +16,22 @@ const routes: Routes = [
 {
   path:'eventos',
   component:PushEventosComponent
+},
+{
+  path:'listar-eventos',
+  component:ListarEventosComponent
+},
+{
+  path:'editar-eventos/:id',
+  component:PushEventosComponent
+},
+{
+  path:'listar-noticias',
+  component:ListarNoticiasComponent
+},
+{
+  path:'editar-noticias/:id',
+  component:PushNoticiasComponent
 },
 {
   path:'noticias',

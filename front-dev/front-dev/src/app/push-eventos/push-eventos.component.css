@@ -39,6 +39,10 @@
     text-align: center;
     margin-top: 20px;
   }
+  .boton1 {
+    text-align: start;
+    margin-top: 20px;
+  }
   
   button[type="submit"] {
     padding: 10px 20px;

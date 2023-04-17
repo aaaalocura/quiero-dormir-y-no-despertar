@@ -8,14 +8,26 @@
 </head>
 <body class=bb>
     
+<div class="title">Centro de Mensajes</div>
 
-
-    <tbody>
-        <h1 class=title>Mensajes Enviados</h1>
-        <tr *ngFor="let item of listarcom">
-        <td>{{item.nombre}}</td>
-        <td>hola</td>
-        </tr>
-        </tbody>
+<div class="tabla">
+     <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Correo</th>
+        <th>Asunto</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr *ngFor="let mensaje of listarcomentarios">
+        <td>{{mensaje.name}}</td>
+        <td>{{mensaje.lastname}}</td>
+          <td>{{mensaje.email}}</td>
+          <td>{{mensaje.message}}</td>
+    </tr>
+   </tbody>
+</div>
+  
 </body>
 </html>
